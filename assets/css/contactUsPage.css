@@ -1,0 +1,108 @@
+.title-contact{
+    color: var(--primary);
+    text-align: center;
+    font-family: 'Poppins';
+    line-height: 150%;
+    font-weight:800;
+    letter-spacing: .1em;
+    margin-top: 20px;
+}
+
+
+.mainForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+form {
+    background-color: white;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    margin: 50px 50px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.form-group {
+    margin-bottom: 1em;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+
+input, select {
+    width: 100%;
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 1em;
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 1em;
+}
+
+button:hover {
+    background-color: var(--secondary);
+}
+
+.error-message {
+    color: red;
+    font-size: 0.875em;
+    display: none;
+}
+
+
+@media (max-width: 768px) {
+    .title-contact{
+        font-size: 2em;
+    }
+    
+    form {
+        padding: 1.5em;
+    }
+
+    button {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    
+    .title-contact{
+        font-size: 1.5em;
+    }
+    
+
+    form {
+        padding: 1em;
+    }
+
+    button {
+        font-size: 0.8em;
+    }
+}

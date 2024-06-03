@@ -1,0 +1,248 @@
+.sectionRecipes{
+    display: flex;
+    flex-direction: column;
+    /* background: linear-gradient(109.6deg, rgb(255, 158, 78) 11.2%, rgb(249, 212, 35) 100.2%); */
+    /* background-color: #ffbb556d; */
+    /* background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%); */
+}
+
+.recipes {
+    margin: 0;
+    display: flex;
+    padding: 50px;
+}
+
+.containerRecipes {
+  width: 350px;
+  height: auto;
+  border-radius: 5px;
+  
+  /* position: absolute; */
+  /* top:0; right: 0; left: 0; bottom: 0; */
+  margin: auto;
+  
+  background: url("/assets/images/berryRecipes.jpg");
+  background-color: black;
+  background-size: cover;
+  cursor: pointer;
+  
+  -webkit-box-shadow: 0 0 5px #000;
+        box-shadow: 0 0 5px #000;
+  }
+
+  .containerRecipes2 {
+    width: 350px;
+    height: 350px;
+    border-radius: 5px;
+    
+    /* position: absolute; */
+    top:0; right: 0; left: 0; bottom: 0;
+    margin: auto;
+    
+    background: url("/assets/images/chocos-chocolate-glacier-home.jpg");
+    background-color: black;
+    background-size: cover;
+    cursor: pointer;
+    
+    -webkit-box-shadow: 0 0 5px #000;
+          box-shadow: 0 0 5px #000;
+    }
+
+.containerRecipes3 {
+     width: 350px;
+     height: 350px;
+     border-radius: 5px;
+        
+     /* position: absolute; */
+     top:0; right: 0; left: 0; bottom: 0;
+     margin: auto;
+        
+     background: url("/assets/images/corn-flakes-chocos-jugal-home\ -\ Copy.jpg");
+     background-color: black;
+     background-size: cover;
+     cursor: pointer;
+        
+    -webkit-box-shadow: 0 0 5px #000;
+       box-shadow: 0 0 5px #000;
+    }
+.head {
+    font-size: 20px;
+    line-height: 40px;
+    transform: translateY(40px);
+    transition: all 0.7s;
+    hr {
+        display: block;
+        width: 0;
+          
+        border: none;
+        border-bottom: solid 2px var(--primary);
+          
+        bottom: 0; left:20px;
+        
+        transition: all 0.5s;
+        }
+    }
+
+.containerRecipes:hover .overlay {
+  opacity: 1;
+  & .head {
+    transform: translateY(0px);
+  }
+  
+  & hr {
+    width: 75px;
+    transition-delay: 0.4s;
+  }
+
+  & .cart {
+    transform: translateY(0px);
+    transition-delay: 0.6s;
+    opacity: 1;
+  }
+}
+
+.containerRecipes2:hover .overlay {
+    opacity: 1;
+    & .head {
+      transform: translateY(0px);
+    }
+    
+    & hr {
+      width: 75px;
+      transition-delay: 0.4s;
+    }
+    
+    & .price {
+      transform: translateY(0px);
+      transition-delay: 0.3s;
+      opacity: 1;
+    }
+    
+    & .cart {
+      transform: translateY(0px);
+      transition-delay: 0.6s;
+      opacity: 1;
+    }
+  }
+
+  .containerRecipes3:hover .overlay {
+    opacity: 1;
+    & .head {
+      transform: translateY(0px);
+    }
+    
+    & hr {
+      width: 75px;
+      transition-delay: 0.4s;
+    }
+    
+    & .price {
+      transform: translateY(0px);
+      transition-delay: 0.3s;
+      opacity: 1;
+    }
+    
+    & .cart {
+      transform: translateY(0px);
+      transition-delay: 0.6s;
+      opacity: 1;
+    }
+  }
+
+  @media (max-width: 1200px) {
+
+    .titleCardProduct h1{
+        font-size: 3rem;
+    }
+
+    .recipes {
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+  
+    .containerRecipes,
+    .containerRecipes2,
+    .containerRecipes3 {
+      width: 100;
+      margin-bottom: 20px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+
+    .containerRecipes p,
+    .containerRecipes2 p,
+    .containerRecipes3 p {
+      font-size: 1.2rem;
+      line-height: 1.5rem;
+    }
+
+
+    .titleCardProduct h1{
+      font-size: 2rem;
+    }
+  
+    .containerRecipes,
+    .containerRecipes2,
+    .containerRecipes3 {
+      width: 50%;
+      max-height: 400px;
+    }
+  
+    .head p {
+      font-size: 1.2rem;
+    }
+  
+    .details-button {
+      padding: 10px 20px;
+      font-size: 14px;
+      margin-top: 0;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .titleCardProduct {
+      font-size: 2rem;
+    }
+  
+    .containerRecipes,
+    .containerRecipes2,
+    .containerRecipes3 {
+      height: 200px;
+    }
+    
+    .containerRecipes i,
+    .containerRecipes2 i,
+    .containerRecipes3 i {
+      font-size: 10px;
+      line-height: 10px;
+    }
+
+    .head p {
+      font-size: 1rem;
+    }
+  
+    .details-button {
+      padding: 8px 16px;
+      font-size: 12px;
+    }
+  }
+
+/* animation */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.containerRecipes, .containerRecipes2, .containerRecipes3 {
+    animation: fadeInUp 1s ease-in-out;
+}
+

@@ -1,0 +1,56 @@
+footer {
+    background-color: #292929;
+    color: white;
+}
+
+.credit {
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 8rem;
+}
+
+footer section .contact p {
+    margin: 1rem 0;
+}
+
+footer section .contact a {
+    text-decoration: none;
+    padding: 0.2rem;
+    color: white;
+}
+
+footer section .contact a img {
+    width: 2rem;
+}
+
+.footer-logo img {
+    width: 10rem;
+}
+
+@media screen and (max-width: 768px) {
+    footer {
+        height: 100%;
+    }
+
+    footer section {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 3rem 3rem;
+    }
+
+    .contact {
+        align-items: center;
+        margin-top: 2rem;
+    }
+
+    .footer-logo {
+        display: flex;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,42 @@
+html{
+    scroll-behavior: smooth;
+    
+}
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    /* overflow: hidden; Hide scrollbars */
+}
+
+*::-webkit-scrollbar {
+    display: none;
+  }
+
+
+
+h1{
+    font-size: 2.5rem;
+}
+h2{
+    font-size: 1.5rem;
+}
+p{
+    font-size: 1rem;
+}
+
+:root {
+    --primary: #FF9F1C;
+    --secondary: #DC5F00;
+    --footer-bg: #292929;
+  }
+
+body{
+    background: #F3F1E2
+    /* background: #F7BD98 */
+}
+
