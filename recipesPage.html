@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes</title>
+
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="/assets/images/icons/favicon.png">
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="../assets/css/nav.css">
+    <link rel="stylesheet" href="/assets/css/global.css">
+    <link rel="stylesheet" href="/assets/css/headerHome.css">
+    <link rel="stylesheet" href="/assets/css/footer.css">
+    <!-- <link rel="stylesheet" href="/assets/css/productPage.css"> -->
+    <link rel="stylesheet" href="/assets/css/recipesPage.css">
+
+</head>
+<body>
+    <!-- Navbar -->
+    <nav id="navbar" class="navbar">
+        <div class="navbar-left">
+            <img class="Logo" src="/assets/images/Logo.png" alt="Logo" />
+        </div>
+        <div class="navbar-right" id="navbar-right">
+            <a href="homePage.html" target="_blank">Home</a>
+            <a href="productPage.html" target="_blank">Product</a>
+            <a href="recipesPage.html" target="_blank">Recipes</a>
+            <a href="aboutUsPage.html" target="_blank">About Us</a>
+            <a href="">Contact Us</a>
+        </div>
+        <div class="burger-icon" id="burger-icon">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </nav>
+    <div class="sidebar" id="sidebar">
+        <span class="closebtn" id="closebtn">&times;</span>
+        <a href="homePage.html" target="_blank">Home</a>
+        <a href="productPage.html" target="_blank">Product</a>
+        <a href="recipesPage.html" target="_blank">Recipes</a>
+        <a href="aboutUsPage.html" target="_blank">About Us</a>
+        <a href="#" target="_blank">Contact Us</a>
+    </div>
+
+    <!-- Title video frame -->
+    <header class="Header">
+        <h1>Vkellogg's</h1>
+        <h2>"Innovating Breakfast Since 1906. From Our Home in Battle Creek to Your Table Worldwide."</h2>
+        <h2>Let see our Recipes Inspiration!</h2>
+        <video autoplay muted loop plays-inline class="video-bg">
+            <source src="/assets/video/videoplayback.mp4" type="video/mp4">
+        </video>
+    </header>
+    
+    <!-- Main card -->
+    <main>
+        <div class="category">
+            <button class="category-button" data-category="all">All</button>
+            <button class="category-button" data-category="breakfast">Breakfast</button>
+            <button class="category-button" data-category="snacks">Snacks</button>
+            <button class="category-button" data-category="desserts">Desserts</button>
+        </div>
+        <main>
+            <div class="recipe-list" data-category="breakfast">
+                <div class="recipe-card">
+                    <img src="/assets/images/bananaChikiBreakfast.avif" alt="banana Chiki">
+                    <div class="recipe-content">
+                        <h3 class="recipe-title">Banana Chiki Corn Flakes</h3>
+                        <p class="recipe-info">Serves: 4 | Preps: 20 min</p>
+                        <p class="recipe-description">Everyone Love this Banana panama</p>
+                    </div>
+                </div>
+                <div class="recipe-card">
+                    <img src="/assets/images/chocosPorridgeBreakfast.avif" alt="Chocos Porridge">
+                    <div class="recipe-content">
+                        <h3 class="recipe-title">Chocos Porridge Laddoo</h3>
+                        <p class="recipe-info">Serves: 1 | Preps: 10 min</p>
+                        <p class="recipe-description">Everyone Love this Chocos Bims Laddoo</p>
+                    </div>
+                </div>
+                <div class="recipe-card">
+                    <img src="/assets/images/muesli-salad-bowl-Breakfast.avif" alt="Muesli Salad">
+                    <div class="recipe-content">
+                        <h3 class="recipe-title">Muesli Salad</h3>
+                        <p class="recipe-info">Serves: 2 | Preps: 10 min</p>
+                        <p class="recipe-description">Enjoy this Fruit Salad with Our Muesli</p>
+                    </div>
+                </div>
+            </div>
+            <div class="recipe-list" data-category="snacks">
+                <div class="recipe-card">
+                    <img src="/assets/images/chocos-and-badam-cake-2202092129-1.avif" alt="Chocos and Badam Mug Cake">
+                    <div class="recipe-content">
+                        <h3 class="recipe-title">Chocos and Badam Mug Cake</h3>
+                        <p class="recipe-info">Serves: 1 | Preps: 5 min</p>
+                        <p class="recipe-description">This chocos make your day become funday!</p>
+                    </div>
+                </div>
+                <div class="recipe-card">
+                    <img src="/assets/images/chocos-icecream.avif" alt="Chocos Ice Cream">
+                    <div class="recipe-content">
+                        <h3 class="recipe-title">Chocos Ice Cream</h3>
+                        <p class="recipe-info">Serves: 3 | Preps: 25 min</p>
+                        <p class="recipe-description">Life is uncertain, but ice cream is always a good idea</p>
+                    </div>
+                </div>
+                <div class="recipe-card">
+                    <img src="/assets/images/corn-flakes-chocos-jugal-bandhi-2202092229-1.avif" alt="Corn Flakes with Chocos">
+                    <div class="recipe-content">
+                        <h3 class="recipe-title">Corn Flakes Chocos with Cream </h3>
+                        <p class="recipe-info">Serves: 1 | Preps: 10 min</p>
+                        <p class="recipe-description">Refresh your dark day with this SweetHeart</p>
+                    </div>
+                </div>
+            </div>
+            <div class="recipe-list" data-category="desserts">
+                <div class="recipe-card">
+                    <img src="/assets/images/chocos-chocolate-glacier-2202092320-1.avif" alt="chocos-chocolate-glacier">
+                    <div class="recipe-content">
+                        <h3 class="recipe-title">Chocos Frozen Chocolate</h3>
+                        <p class="recipe-info">Serves: 1 | Preps: 10 min</p>
+                        <p class="recipe-description">This wholesome dessert will surely melt your heart, while also melting in your mouth.</p>
+                    </div>
+                </div>
+                <div class="recipe-card">
+                    <img src="/assets/images/coconut-parfait.avif" alt="Muesli-Parfait">
+                    <div class="recipe-content">
+                        <h3 class="recipe-title">Muesli Coconut Parfait</h3>
+                        <p class="recipe-info">Serves: 1 | Preps: 5 min</p>
+                        <p class="recipe-description">This Muesli Coconut Parfait with 21% Fruits & Nuts</p>
+                    </div>
+                </div>
+                <div class="recipe-card">
+                    <img src="/assets/images/berry-bircher.avif" alt="Berry Muesli Nuts">
+                    <div class="recipe-content">
+                        <h3 class="recipe-title">Berry Muesli Nuts</h3>
+                        <p class="recipe-info">Serves: 1 | Preps: 5 min</p>
+                        <p class="recipe-description">Only 3 steps, you'll get all day happiness. Nut & Seeds that can be made overnight!</p>
+                    </div>
+                </div>
+            </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <section>
+            <div class="contact">
+                <p>Contact us</p>
+                <a href="">
+                    <img src="/assets/images/icons/youtube.svg" alt="youtube">
+                </a>
+                <a href="">
+                    <img src="/assets/images/icons/twitter.svg" alt="twitter">
+                </a>
+                <a href="">
+                    <img src="/assets/images/icons/linkedin.svg" alt="linkedin">
+                </a>
+                <a href="">
+                    <img src="/assets/images/icons/facebook.svg" alt="facebook">
+                </a>
+                <a href="">
+                    <img src="/assets/images/icons/instagram.svg" alt="instagram">
+                </a>
+                <a href="mailto:naufal.ananda@binus.ac.id">
+                    <img src="/assets/images/icons/email.svg" alt="email">
+                </a>
+            </div>
+            <div class="footer-logo">
+                <img src="/assets/images/Logowhite2.png" alt="logo">
+            </div>
+        </section>
+        <div class="credit">Copyright 2024 | Vkellogg'S </div>
+    </footer>
+
+    <script src="/assets/js/nav.js"></script>
+    <script src="/assets/js/recipesPage.js"></script>
+</body>
+</html>

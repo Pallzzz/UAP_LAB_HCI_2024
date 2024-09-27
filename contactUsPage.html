@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="/assets/images/icons/favicon.png">
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="../assets/css/nav.css">
+    <link rel="stylesheet" href="/assets/css/global.css">
+    <link rel="stylesheet" href="/assets/css/headerHome.css">
+    <link rel="stylesheet" href="/assets/css/footer.css">
+    <link rel="stylesheet" href="/assets/css/contactUsPage.css">
+
+</head>
+<body>
+    <!-- Navbar -->
+    <nav id="navbar" class="navbar">
+        <div class="navbar-left">
+            <img class="Logo" src="/assets/images/Logo.png" alt="Logo" />
+        </div>
+        <div class="navbar-right" id="navbar-right">
+            <a href="homePage.html" target="_blank">Home</a>
+            <a href="productPage.html" target="_blank">Product</a>
+            <a href="recipesPage.html" target="_blank">Recipes</a>
+            <a href="aboutUsPage.html" target="_blank">About Us</a>
+            <a href="">Contact Us</a>
+        </div>
+        <div class="burger-icon" id="burger-icon">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </nav>
+    <div class="sidebar" id="sidebar">
+        <span class="closebtn" id="closebtn">&times;</span>
+        <a href="homePage.html" target="_blank">Home</a>
+        <a href="productPage.html" target="_blank">Product</a>
+        <a href="recipesPage.html" target="_blank">Recipes</a>
+        <a href="aboutUsPage.html" target="_blank">About Us</a>
+        <a href="#">Contact Us</a>
+    </div>
+    
+    <!-- Title video frame -->
+    <header class="Header">
+        <h1>Vkellogg's</h1>
+        <h2>"Innovating Breakfast Since 1906. From Our Home in Battle Creek to Your Table Worldwide."</h2>
+        <video autoplay muted loop plays-inline class="video-bg">
+            <source src="/assets/video/videoplayback.mp4" type="video/mp4">
+        </video>
+    </header>
+
+    <h1 class="title-contact">Contact Us!</h1>
+    <main class="mainForm">
+        <form id="contact-form">
+            <div class="form-group">
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" name="first-name" required>
+                <span class="error-message" id="first-name-error"></span>
+            </div>
+            <div class="form-group">
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name" name="last-name" required>
+                <span class="error-message" id="last-name-error"></span>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+                <span class="error-message" id="email-error"></span>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+                <span class="error-message" id="phone-error"></span>
+            </div>
+            <div class="form-group">
+                <label for="inquiry">Nature of Inquiry:</label>
+                <select id="inquiry" name="inquiry" required>
+                    <option value="" disabled selected>Select your inquiry</option>
+                    <option value="product">Product Information</option>
+                    <option value="feedback">Feedback</option>
+                    <option value="other">Other</option>
+                </select>
+                <span class="error-message" id="inquiry-error"></span>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <section>
+            <div class="contact">
+                <p>Contact us</p>
+                <a href="">
+                    <img src="/assets/images/icons/youtube.svg" alt="youtube">
+                </a>
+                <a href="">
+                    <img src="/assets/images/icons/twitter.svg" alt="twitter">
+                </a>
+                <a href="#">
+                    <img src="/assets/images/icons/linkedin.svg" alt="linkedin">
+                </a>
+                <a href="">
+                    <img src="/assets/images/icons/facebook.svg" alt="facebook">
+                </a>
+                <a href="">
+                    <img src="/assets/images/icons/instagram.svg" alt="instagram">
+                </a>
+                <a href="">
+                    <img src="/assets/images/icons/email.svg" alt="email">
+                </a>
+            </div>
+            <div class="footer-logo">
+                <img src="/assets/images/Logowhite2.png" alt="logo">
+            </div>
+        </section>
+        <div class="credit">Copyright 2024 | Vkellogg'S </div>
+    </footer>
+
+    <script src="/assets/js/nav.js"></script>
+    <script src="/assets/js/contactUsPage.js"></script>
+</body>
+</html>
